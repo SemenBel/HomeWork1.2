@@ -42,11 +42,10 @@ public class Main {
         int excessWeightGram = excessWeightKg * oneKgInGram;
         int daysWeightLoss1 = excessWeightGram / weightLoss1;
         int daysWeightLoss2 = excessWeightGram / weightLoss2;
-        float meanWeightLoss = (weightLoss1+weightLoss2) / 2F;
-        float daysMeanWeightLoss = excessWeightGram / meanWeightLoss;
+        float daysMeanWeightLoss = (daysWeightLoss1 + daysWeightLoss2) / 2F;
         System.out.println("Если спортсмен будет терять каждый день по 250 грамм ему потребуется " + daysWeightLoss1 + " дней");
         System.out.println("Если спортсмен будет терять каждый день по 500 грамм ему потребуется " + daysWeightLoss2 + " дней");
-        System.out.println("Чтобы добиться результата похудения спортсмену может потребоваться " + daysMeanWeightLoss + " дней в среднем");
+        System.out.println("Чтобы добиться результата похудения спортсмену может потребоваться " + daysMeanWeightLoss + " день в среднем");
 
         // Задача 5
         int mashaSalary = 67760;
